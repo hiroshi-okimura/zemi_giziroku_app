@@ -44,3 +44,11 @@
 - [小規模開発でのタスク管理に便利！github projectsの使い方解説](https://gattino.jp/github-projects/)
 - [Issue, Pull Requestを関連付けて扱う](https://qiita.com/kodai_0122/items/18f7faa80f0302244c51)
 - [Git ブランチを削除する方法 (ローカル、リモート)](https://www.freecodecamp.org/japanese/news/how-to-delete-a-git-branch-both-locally-and-remotely/)
+
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
