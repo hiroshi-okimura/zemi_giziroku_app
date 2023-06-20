@@ -46,7 +46,8 @@
 - [Git ブランチを削除する方法 (ローカル、リモート)](https://www.freecodecamp.org/japanese/news/how-to-delete-a-git-branch-both-locally-and-remotely/)
 
 
-```erDiagram
+```mermaid　
+erDiagram
   users ||--o{ posts : "1人のユーザーは0以上の投稿を持つ"
   users ||--o{ comments: "1人のユーザーは0以上のコメントを持つ"
   posts ||--o{ comments: "1つの投稿は0以上のコメントを持つ"
@@ -75,4 +76,4 @@
     timestamp created_at
     timestamp deleted_at
   }
-```
+```　
