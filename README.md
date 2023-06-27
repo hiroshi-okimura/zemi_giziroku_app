@@ -41,6 +41,9 @@
 - Notion API
 - Qiita API
 
+### ■ 画面遷移図
+[Figma](https://www.figma.com/file/VJrl7KO9RicOxZos05q4Xw/zemigiziroku?type=design&node-id=0-1&mode=design&t=DmCYD2zU3iZhYsxP-0)
+
 ### チーム開発フローで参考になりそうなサイト
 
 - [GitHub と GitHub Desktop を使った小規模チーム開発](https://am1tanaka.hatenablog.com/entry/2015/11/06/130120)
