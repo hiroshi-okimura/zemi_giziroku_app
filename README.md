@@ -44,6 +44,46 @@
 ### ■ 画面遷移図
 [Figma](https://www.figma.com/file/VJrl7KO9RicOxZos05q4Xw/zemigiziroku?type=design&node-id=0-1&mode=design&t=DmCYD2zU3iZhYsxP-0)
 
+### ■ テーブル設計
+```mermaid
+erDiagram
+  teams ||--o{ users : "1つのチームは0以上のユーザーを持つ"
+  users ||--o{ reports: "1人のユーザーは0以上のレポートを持つ"
+  teams ||--o{ minutes: "1つのチームは0以上の議事録を持つ"
+  minutes ||--o{ reports: "1つの議事録は0以上のレポートを持つ"
+
+  users {
+    bigint id PK
+    string name "ユーザー名"
+    string email "メールアドレス"
+    string crypted_password
+    stirng salt
+    integer status "ゼミ生か判定"
+    integer period "何期生か"
+    references team FK
+  }
+
+  teams {
+    bigint id PK
+    string team
+  }
+
+  minutes {
+    bigint id PK
+    references team FK
+    string title "議事録タイトル"
+    text content "議事録内容"
+  }
+
+  reports {
+    bigint id PK
+    references user FK
+    references minute FK
+    string title "レポートタイトル"
+    text content "レポート内容"
+  }
+```
+
 ### チーム開発フローで参考になりそうなサイト
 
 - [GitHub と GitHub Desktop を使った小規模チーム開発](https://am1tanaka.hatenablog.com/entry/2015/11/06/130120)
