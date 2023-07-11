@@ -1,4 +1,4 @@
-FROM ruby:3.2.2
+FROM ruby:3.0.2
 ENV LANG C.UTF-8
 ENV TZ Asia/Tokyo
 RUN curl -sL https://deb.nodesource.com/setup_19.x | bash - \
